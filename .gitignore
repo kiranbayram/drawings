@@ -1,3 +1,10 @@
 target
 project/project
 project/target
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+
+*.iml
+
+.idea/
+

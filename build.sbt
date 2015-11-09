@@ -1,6 +1,5 @@
-lazy val root = (project in file(".")).
-  settings(
-    name := "drawings",
-    version := "1.0",
-    scalaVersion := "2.11.4"
-  )
+enablePlugins(ScalaJSPlugin)
+
+name := "drawings"
+
+scalaVersion := "2.11.7" // or any other Scala version >= 2.10.2
