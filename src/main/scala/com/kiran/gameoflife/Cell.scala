@@ -1,4 +1,4 @@
-package com.drawing.gameoflife
+package com.kiran.gameoflife
 
 case class Cell(val state: CellStates.Value)
 

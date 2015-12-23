@@ -1,11 +1,11 @@
-package com.drawing.gameoflife
+package com.kiran.gameoflife
 
 import CellStates._
 
 class Generation(matrix: Matrix) {
 
-  private val width = matrix(0).length
-  private val length = matrix.length
+  private val length = matrix(0).length
+  private val width = matrix.length
 
   def cellAt(x: Int, y: Int): Cell = matrix(x)(y)
 
@@ -14,13 +14,13 @@ class Generation(matrix: Matrix) {
 
     for { i <- 0 to width - 1; j <- 0 to length - 1 } {
       matrix(i)(j) match {
-        case Dead => {
+        case Cell(Dead) => {
           aliveNeighbourCount(i, j) match {
             case 3 => newMatrix(i)(j) = Cell(Alive)
             case _ => newMatrix(i)(j) = Cell(Dead)
           }
         }
-        case Alive => {
+        case Cell(Alive) => {
           aliveNeighbourCount(i, j) match {
             case c if c == 2 || c == 3  => newMatrix(i)(j) = Cell(Alive)
             case _                      => newMatrix(i)(j) = Cell(Dead)

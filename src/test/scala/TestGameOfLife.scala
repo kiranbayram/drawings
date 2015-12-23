@@ -1,5 +1,5 @@
-import com.drawing.gameoflife.{Generation, Cell}
-import com.drawing.gameoflife.CellStates._
+import com.kiran.gameoflife.{Generation, Cell}
+import com.kiran.gameoflife.CellStates._
 import org.specs2.Specification
 
 class TestGameOfLife extends Specification {
@@ -22,7 +22,7 @@ class TestGameOfLife extends Specification {
     (nextGeneration.cellAt(0, 2) mustEqual Cell(Dead)) and
     (nextGeneration.cellAt(1, 0) mustEqual Cell(Dead)) and
     (nextGeneration.cellAt(1, 1) mustEqual Cell(Dead)) and
-    (nextGeneration.cellAt(1, 2) mustEqual Cell(Alive))
+    (nextGeneration.cellAt(1, 2) mustEqual Cell(Dead))
   }
 
 }
