@@ -4,4 +4,4 @@ A scala implementation for game of life.
 
 # How to run
 
-TODO BK
+TODO BK: fill here
